@@ -1,0 +1,1023 @@
+{
+  "world": {
+    "entities": [
+      {
+        "id": "b2c3d4e5-6789-0abc-def1-23456789abcd",
+        "name": "Rivendell",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-03-15T00:00:00.000Z",
+        "tags": [
+          "elven realm",
+          "haven",
+          "sanctuary"
+        ],
+        "summary": "The Last Homely House East of the Sea, an elven refuge founded by Elrond",
+        "type": "location",
+        "subType": "city",
+        "description": "Hidden valley in the foothills of the Misty Mountains, home to Elrond and a sanctuary for travelers. Known for its architecture, healing houses, and role in major events."
+      },
+      {
+        "id": "d4e5f6g7-8901-bcde-f234-56789abcdef0",
+        "name": "The One Ring",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-03-15T00:00:00.000Z",
+        "tags": [
+          "artifact",
+          "evil",
+          "powerful"
+        ],
+        "summary": "The master ring forged by Sauron to control all other rings of power",
+        "type": "item",
+        "subType": "artifact",
+        "description": "A golden ring that grants invisibility to its bearer but corrupts them over time",
+        "powers": [
+          "invisibility",
+          "extended life",
+          "corruption",
+          "control other rings"
+        ],
+        "history": "Forged by Sauron in Mount Doom during the Second Age to control all other Rings of Power"
+      },
+      {
+        "id": "e5f6g7h8-9012-cdef-g345-6789abcdef01",
+        "name": "The Shire",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-03-15T00:00:00.000Z",
+        "tags": [
+          "hobbit homeland",
+          "peaceful",
+          "fertile"
+        ],
+        "summary": "Homeland of the Hobbits in northwestern Middle-earth",
+        "type": "location",
+        "subType": "region",
+        "description": "A peaceful, fertile region inhabited by Hobbits, known for its rolling hills and pastoral farms",
+        "climate": "temperate",
+        "culture": "Hobbit society focused on comfort, food, and simple living"
+      },
+      {
+        "id": "f6g7h8i9-0123-defg-h456-789abcdef012",
+        "name": "The Fellowship of the Ring",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-03-15T00:00:00.000Z",
+        "tags": [
+          "alliance",
+          "quest",
+          "heroes"
+        ],
+        "summary": "A group of nine companions chosen to help destroy the One Ring",
+        "type": "faction",
+        "subType": "order",
+        "description": "A company of nine members representing the Free Peoples of Middle-earth",
+        "influence": 10,
+        "beliefs": [
+          "The One Ring must be destroyed",
+          "Unity against evil",
+          "Protection of Middle-earth"
+        ],
+        "traditions": [
+          "Sworn loyalty to the Ring-bearer",
+          "Mutual protection"
+        ]
+      },
+      {
+        "id": "g7h8i9j0-1234-efgh-i567-89abcdef0123",
+        "name": "War of the Ring",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-03-15T00:00:00.000Z",
+        "tags": [
+          "war",
+          "third age",
+          "major conflict"
+        ],
+        "summary": "The great conflict at the end of the Third Age",
+        "type": "event",
+        "subType": "battle",
+        "description": "The final war against Sauron that determined the fate of Middle-earth",
+        "date": {
+          "start": "9899",
+          "end": "9901"
+        },
+        "consequences": [
+          "Destruction of the One Ring",
+          "Fall of Sauron",
+          "Beginning of the Age of Men",
+          "Departure of the Elves"
+        ]
+      },
+      {
+        "id": "h8i9j0k1-2345-fghi-j678-9abcdef01234",
+        "name": "Third Age",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-11-02T04:15:10.694Z",
+        "tags": [
+          "age",
+          "timeline",
+          "major era"
+        ],
+        "summary": "The Third Age of Middle-earth, ending with the War of the Ring",
+        "type": "timePeriod",
+        "subType": "age",
+        "description": "The age marked by the rise and fall of Sauron and the end of the dominion of the Elves",
+        "date": {
+          "start": "10323",
+          "end": "13343"
+        },
+        "majorChanges": [
+          "Rise and fall of Arnor and Gondor",
+          "Weakening of the Elves",
+          "Rise and defeat of Sauron"
+        ],
+        "culturalCharacteristics": [
+          "Decline of ancient powers",
+          "Rise of Men",
+          "Fading of magic"
+        ],
+        "technologicalLevel": "Medieval with magical elements"
+      },
+      {
+        "id": "i9j0k1l2-3456-ghij-k789-abcdef012345",
+        "name": "Aragorn",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-11-03T01:19:45.825Z",
+        "tags": [
+          "ranger",
+          "king",
+          "dunedain",
+          "heir of isildur"
+        ],
+        "summary": "The heir of Isildur who became King of the Reunited Kingdom",
+        "type": "character",
+        "subType": "protagonist",
+        "biography": "Born as Aragorn II, he was raised in Rivendell as Estel. He became chieftain of the Dúnedain and later crowned as King Elessar of the Reunited Kingdom."
+      },
+      {
+        "id": "j0k1l2m3-4567-hijk-l890-bcdef0123456",
+        "name": "Gondor",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-03-15T00:00:00.000Z",
+        "tags": [
+          "kingdom",
+          "men",
+          "south kingdom"
+        ],
+        "summary": "The great kingdom of Men in the South of Middle-earth",
+        "type": "faction",
+        "subType": "kingdom",
+        "description": "The greatest realm of Men in the Third Age, founded by Elendil and his sons",
+        "influence": 9,
+        "beliefs": [
+          "Preservation of Númenórean culture",
+          "Defense against the forces of Mordor",
+          "Loyalty to the line of kings"
+        ],
+        "traditions": [
+          "Stewardship in absence of the king",
+          "Lighting of the beacons",
+          "White Tree of Gondor"
+        ]
+      },
+      {
+        "id": "k1l2m3n4-5678-ijkl-m901-cdef01234567",
+        "name": "Minas Tirith",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-03-15T00:00:00.000Z",
+        "tags": [
+          "city",
+          "fortress",
+          "capital"
+        ],
+        "summary": "The great citadel and capital city of Gondor",
+        "type": "location",
+        "subType": "city",
+        "description": "A seven-tiered fortress-city built into Mount Mindolluin, serving as the capital of Gondor",
+        "climate": "temperate",
+        "culture": "Gondorian society focused on military tradition and preservation of ancient knowledge"
+      },
+      {
+        "id": "l2m3n4o5-6789-jklm-n012-def012345678",
+        "name": "Siege of Minas Tirith",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-03-15T00:00:00.000Z",
+        "tags": [
+          "battle",
+          "war of the ring",
+          "siege"
+        ],
+        "summary": "The great battle for the capital of Gondor during the War of the Ring",
+        "type": "event",
+        "subType": "battle",
+        "description": "A major battle where the forces of Mordor besieged Minas Tirith, culminating in the arrival of the Rohirrim and Aragorn's forces",
+        "date": {
+          "start": "13342-03-13",
+          "end": "13342-03-15"
+        },
+        "consequences": [
+          "Salvation of Minas Tirith",
+          "Death of King Théoden",
+          "Proving of Aragorn's leadership",
+          "Weakening of Sauron's forces"
+        ]
+      },
+      {
+        "id": "m3n4o5p6-7890-klmn-o123-ef0123456789",
+        "name": "Andúril",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-03-15T00:00:00.000Z",
+        "tags": [
+          "sword",
+          "heirloom",
+          "reforged"
+        ],
+        "summary": "The reforged sword of Elendil, wielded by Aragorn",
+        "type": "item",
+        "subType": "weapon",
+        "description": "The reforged shards of Narsil, the sword that cut the One Ring from Sauron's hand",
+        "powers": [
+          "supernatural sharpness",
+          "never-dulling blade",
+          "symbol of kingship"
+        ],
+        "history": "Originally known as Narsil, broken in the battle against Sauron, reforged by the elves of Rivendell for Aragorn"
+      },
+      {
+        "id": "n4o5p6q7-8901-lmno-p123-456789abcdef",
+        "name": "Samwise Gamgee",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-11-03T01:19:49.445Z",
+        "tags": [
+          "hobbit",
+          "gardener",
+          "loyal"
+        ],
+        "summary": "Frodo's loyal friend and companion throughout the quest to destroy the One Ring",
+        "type": "character",
+        "subType": "protagonist",
+        "biography": "A hobbit from the Shire who served as Frodo's gardener and became his most trusted companion. Known for his unwavering loyalty and bravery."
+      },
+      {
+        "id": "o5p6q7r8-9012-mnop-q234-56789abcdef0",
+        "name": "Mordor",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-03-15T00:00:00.000Z",
+        "tags": [
+          "evil realm",
+          "dark land",
+          "volcanic"
+        ],
+        "summary": "The dark realm of Sauron in the southeast of Middle-earth",
+        "type": "location",
+        "subType": "region",
+        "description": "A barren, volcanic realm surrounded by mountain ranges, home to Sauron's fortress of Barad-dûr and Mount Doom",
+        "climate": "harsh volcanic",
+        "culture": "Dominated by evil forces and organized around military might"
+      },
+      {
+        "id": "p6q7r8s9-0123-nopq-r345-6789abcdef01",
+        "name": "Mount Doom",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-03-15T00:00:00.000Z",
+        "tags": [
+          "volcano",
+          "forge",
+          "destiny"
+        ],
+        "summary": "The volcano where the One Ring was forged and ultimately destroyed",
+        "type": "location",
+        "subType": "landmark",
+        "description": "An active volcano in Mordor where Sauron forged the One Ring and the only place where it could be destroyed",
+        "climate": "volcanic"
+      },
+      {
+        "id": "q7r8s9t0-1234-opqr-s456-789abcdef012",
+        "name": "Second Age",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-03-15T00:00:00.000Z",
+        "tags": [
+          "age",
+          "rings of power",
+          "numenor"
+        ],
+        "summary": "The age of Númenor's glory and the forging of the Rings of Power",
+        "type": "timePeriod",
+        "subType": "age",
+        "description": "The age marked by the rise and fall of Númenor and the forging of the Rings of Power",
+        "date": {
+          "start": "3441",
+          "end": "10322"
+        },
+        "majorChanges": [
+          "Forging of the Rings of Power",
+          "Rise and Fall of Númenor",
+          "Last Alliance of Elves and Men"
+        ],
+        "culturalCharacteristics": [
+          "Height of Númenórean civilization",
+          "Peak of Elven craftsmanship",
+          "Spread of Men's influence"
+        ],
+        "technologicalLevel": "Advanced with high magic"
+      },
+      {
+        "id": "r8s9t0u1-2345-pqrs-t567-89abcdef0123",
+        "name": "Sauron",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-11-03T01:30:21.356Z",
+        "tags": [
+          "dark lord",
+          "maiar",
+          "deceiver"
+        ],
+        "summary": "The Dark Lord who created the One Ring",
+        "type": "character",
+        "subType": "antagonist",
+        "biography": "Originally a Maia of Aulë, corrupted by Melkor, became the second Dark Lord of Middle-earth",
+        "age": null,
+        "immortal": true
+      },
+      {
+        "id": "b9c0d1e2-3456-ghij-k789-123456789abc",
+        "name": "First Age",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-03-15T00:00:00.000Z",
+        "tags": [
+          "age",
+          "elves",
+          "great battles"
+        ],
+        "summary": "The First Age of the Sun, marked by the wars against Morgoth",
+        "type": "timePeriod",
+        "subType": "age",
+        "description": "The age of the first rising of the Sun and Moon, the awakening of Men, and the great wars against Morgoth in Beleriand",
+        "date": {
+          "start": "1",
+          "end": "3441"
+        },
+        "majorChanges": [
+          "First rising of the Sun and Moon",
+          "Awakening of Men",
+          "Wars of Beleriand",
+          "Fall of Morgoth"
+        ],
+        "culturalCharacteristics": [
+          "Height of Elven kingdoms in Middle-earth",
+          "First contact between Elves and Men",
+          "Great heroic deeds and tragedies",
+          "Peak of magical power"
+        ],
+        "technologicalLevel": "Advanced with high magic"
+      },
+      {
+        "id": "c1d2e3f4-5678-wxyz-a901-234567890abc",
+        "name": "Fourth Age",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-03-15T00:00:00.000Z",
+        "tags": [
+          "age",
+          "dominion of men",
+          "post-ring"
+        ],
+        "summary": "The Age of Men, beginning after the destruction of the One Ring",
+        "type": "timePeriod",
+        "subType": "age",
+        "description": "The age marked by the dominion of Men and the fading of the Elves from Middle-earth",
+        "date": {
+          "start": "13344",
+          "end": null
+        },
+        "majorChanges": [
+          "Departure of the Ring-bearers",
+          "Fading of the Elves",
+          "Rise of the Dominion of Men"
+        ],
+        "culturalCharacteristics": [
+          "Decline of magic",
+          "Dominion of Men",
+          "Preservation of ancient knowledge"
+        ],
+        "technologicalLevel": "Medieval with declining magic"
+      },
+      {
+        "id": "d2e3f4g5-6789-hijk-l901-234567890def",
+        "name": "Galadriel",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-11-03T01:19:52.445Z",
+        "tags": [
+          "elf",
+          "ruler",
+          "ring-bearer"
+        ],
+        "summary": "The Lady of Lothlórien, bearer of Nenya",
+        "type": "character",
+        "subType": "protagonist",
+        "biography": "One of the greatest of the Eldar in Middle-earth, ruler of Lothlórien alongside Celeborn",
+        "age": null,
+        "immortal": true
+      },
+      {
+        "id": "e3f4g5h6-7890-ijkl-m012-345678901efg",
+        "name": "Lothlórien",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-03-15T00:00:00.000Z",
+        "tags": [
+          "elven realm",
+          "golden wood",
+          "magical"
+        ],
+        "summary": "The golden forest realm of Galadriel and Celeborn",
+        "type": "location",
+        "subType": "region",
+        "description": "An enchanted forest realm of the Elves, protected by the power of Nenya",
+        "climate": "temperate",
+        "culture": "Ancient elven society focused on preservation and arts"
+      },
+      {
+        "id": "f4g5h6i7-8901-jklm-n123-456789012fgh",
+        "name": "Nenya",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-03-15T00:00:00.000Z",
+        "tags": [
+          "ring of power",
+          "elven ring",
+          "artifact"
+        ],
+        "summary": "The Ring of Water, one of the three Elven rings",
+        "type": "item",
+        "subType": "artifact",
+        "description": "One of the Three Elven Rings, made of mithril with a white stone",
+        "powers": [
+          "preservation",
+          "protection",
+          "concealment"
+        ],
+        "history": "Crafted by Celebrimbor in the Second Age, given to Galadriel for safekeeping"
+      },
+      {
+        "id": "k9l0m1n2-3456-opqr-s678-901234567klm",
+        "name": "Gandalf",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-11-03T01:19:52.445Z",
+        "tags": [
+          "wizard",
+          "istari",
+          "maiar"
+        ],
+        "summary": "The Grey Wizard who later became Gandalf the White",
+        "type": "character",
+        "subType": "protagonist",
+        "biography": "One of the five Istari sent to Middle-earth to contest the power of Sauron",
+        "age": null,
+        "immortal": true
+      },
+      {
+        "id": "l0m1n2o3-4567-pqrs-t789-012345678lmn",
+        "name": "Narya",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-03-15T00:00:00.000Z",
+        "tags": [
+          "ring of power",
+          "elven ring",
+          "fire"
+        ],
+        "summary": "The Ring of Fire, one of the three Elven rings",
+        "type": "item",
+        "subType": "artifact",
+        "description": "One of the Three Elven Rings, set with a ruby",
+        "powers": [
+          "resistance to tyranny",
+          "inspiration",
+          "command of fire"
+        ],
+        "history": "Originally given to Círdan, who later passed it to Gandalf"
+      },
+      {
+        "id": "m1n2o3p4-5678-qrst-u890-123456789mno",
+        "name": "Isengard",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-11-03T01:52:07.298Z",
+        "tags": [
+          "fortress",
+          "tower",
+          "stronghold"
+        ],
+        "summary": "The fortress of Saruman, containing the tower of Orthanc",
+        "type": "location",
+        "subType": "building",
+        "description": "A great fortress at the southern end of the Misty Mountains, dominated by the tower of Orthanc",
+        "climate": "temperate",
+        "culture": "Originally Gondorian, later corrupted by Saruman"
+      },
+      {
+        "id": "n2o3p4q5-6789-rstu-v901-234567890nop",
+        "name": "Saruman",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-11-03T01:19:52.445Z",
+        "tags": [
+          "wizard",
+          "istari",
+          "traitor"
+        ],
+        "summary": "The chief of the Istari who fell to corruption",
+        "type": "character",
+        "subType": "antagonist",
+        "biography": "Originally the leader of the White Council, corrupted by his studies of Sauron's arts",
+        "age": null,
+        "immortal": true
+      },
+      {
+        "id": "o3p4q5r6-7890-stuv-w012-345678901opq",
+        "name": "Battle of Helm's Deep",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-03-15T00:00:00.000Z",
+        "tags": [
+          "battle",
+          "war of the ring",
+          "rohan"
+        ],
+        "summary": "Major battle between the forces of Rohan and Saruman's army",
+        "type": "event",
+        "subType": "battle",
+        "description": "A decisive battle where the forces of Rohan defended the Hornburg against Saruman's army",
+        "date": {
+          "start": "13342-03-03",
+          "end": "13342-03-04"
+        },
+        "consequences": [
+          "Victory for Rohan",
+          "Weakening of Saruman's power",
+          "Survival of Rohan's people",
+          "Demonstration of the Ents' power"
+        ]
+      },
+      {
+        "id": "t9u0v1w2-3456-xyza-b789-012345678tuv",
+        "name": "Frodo Baggins",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-11-03T01:19:52.445Z",
+        "tags": [
+          "hobbit",
+          "ring-bearer",
+          "hero"
+        ],
+        "summary": "The Ring-bearer who carried the One Ring to Mordor",
+        "type": "character",
+        "subType": "protagonist",
+        "biography": "A hobbit from the Shire who inherited the One Ring from his uncle Bilbo and undertook the quest to destroy it",
+        "age": 53,
+        "immortal": false
+      },
+      {
+        "id": "u0v1w2x3-4567-yzab-c890-123456789uvw",
+        "name": "Minas Morgul",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-03-15T00:00:00.000Z",
+        "tags": [
+          "fortress",
+          "evil",
+          "nazgul"
+        ],
+        "summary": "Former Gondorian city corrupted by the Nazgûl",
+        "type": "location",
+        "subType": "city",
+        "description": "Originally Minas Ithil, captured by the forces of Sauron and transformed into a place of evil",
+        "climate": "dark and corrupted",
+        "culture": "Dominated by the Nazgûl and forces of Mordor"
+      },
+      {
+        "id": "v1w2x3y4-5678-zabc-d901-234567890vwx",
+        "name": "Battle of the Pelennor Fields",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-03-15T00:00:00.000Z",
+        "tags": [
+          "battle",
+          "war of the ring",
+          "major conflict"
+        ],
+        "summary": "The greatest battle of the War of the Ring",
+        "type": "event",
+        "subType": "battle",
+        "description": "The decisive battle before the gates of Minas Tirith between the forces of Gondor and Rohan against the armies of Mordor",
+        "date": {
+          "start": "13342-03-15",
+          "end": "13342-03-15"
+        },
+        "consequences": [
+          "Victory for the forces of the West",
+          "Death of the Witch-king",
+          "Salvation of Minas Tirith",
+          "Major defeat for Sauron's forces"
+        ]
+      },
+      {
+        "id": "w5x6y7z8-9012-defg-h345-678901234wxy",
+        "name": "Boromir",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-11-03T01:19:52.445Z",
+        "tags": [
+          "warrior",
+          "gondorian",
+          "fellowship"
+        ],
+        "summary": "Captain of Gondor and member of the Fellowship of the Ring",
+        "type": "character",
+        "subType": "protagonist",
+        "biography": "Eldest son of Denethor II, Captain of the White Tower, and member of the Fellowship who fell defending Merry and Pippin",
+        "age": 41,
+        "immortal": false
+      },
+      {
+        "id": "x6y7z8a9-0123-efgh-i456-789012345xyz",
+        "name": "Fangorn Forest",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-03-15T00:00:00.000Z",
+        "tags": [
+          "forest",
+          "ents",
+          "ancient"
+        ],
+        "summary": "Ancient forest home to the Ents",
+        "type": "location",
+        "subType": "region",
+        "description": "An ancient forest inhabited by Ents, located near Isengard",
+        "climate": "temperate forest",
+        "culture": "Domain of the Ents, ancient shepherds of trees"
+      },
+      {
+        "id": "y7z8a9b0-1234-fghi-j567-890123456yza",
+        "name": "Council of Elrond",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-03-15T00:00:00.000Z",
+        "tags": [
+          "meeting",
+          "war of the ring",
+          "fellowship"
+        ],
+        "summary": "Secret council where the fate of the One Ring was decided",
+        "type": "event",
+        "subType": "meeting",
+        "description": "A secret council held in Rivendell to determine the fate of the One Ring",
+        "date": {
+          "start": "13341-10-25",
+          "end": "13341-10-25"
+        },
+        "consequences": [
+          "Formation of the Fellowship of the Ring",
+          "Decision to destroy the One Ring",
+          "Alliance of Free Peoples",
+          "Beginning of the Quest of the Ring"
+        ]
+      },
+      {
+        "id": "z8a9b0c1-2345-ghij-k678-901234567zab",
+        "name": "Legolas",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-11-03T01:19:52.445Z",
+        "tags": [
+          "elf",
+          "warrior",
+          "fellowship",
+          "prince"
+        ],
+        "summary": "Elven prince of the Woodland Realm and member of the Fellowship",
+        "type": "character",
+        "subType": "protagonist",
+        "biography": "Son of King Thranduil, skilled archer and warrior who joined the Fellowship of the Ring",
+        "age": null,
+        "immortal": true
+      },
+      {
+        "id": "a9b0c1d2-3456-hijk-l789-012345678abc",
+        "name": "Gimli",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-11-03T01:19:52.445Z",
+        "tags": [
+          "dwarf",
+          "warrior",
+          "fellowship"
+        ],
+        "summary": "Dwarf warrior and member of the Fellowship of the Ring",
+        "type": "character",
+        "subType": "protagonist",
+        "biography": "Son of Glóin, representative of the dwarves in the Fellowship, who formed an unlikely friendship with Legolas",
+        "age": 139,
+        "immortal": false
+      },
+      {
+        "id": "b0c1d2e3-4567-ijkl-m890-123456789bcd",
+        "name": "Weathertop",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-03-15T00:00:00.000Z",
+        "tags": [
+          "ruins",
+          "watchtower",
+          "historical"
+        ],
+        "summary": "Ancient watchtower where Frodo was wounded by the Witch-king",
+        "type": "location",
+        "subType": "landmark",
+        "description": "Also known as Amon Sûl, an ancient watchtower of Arnor, site of a significant confrontation with the Nazgûl",
+        "climate": "temperate",
+        "culture": "Originally Arnorian, now abandoned ruins"
+      },
+      {
+        "id": "c1d2e3f4-5678-jklm-n901-234567890cde",
+        "name": "Battle of the Five Armies",
+        "createdAt": "2024-03-15T00:00:00.000Z",
+        "updatedAt": "2024-03-15T00:00:00.000Z",
+        "tags": [
+          "battle",
+          "war of the ring",
+          "major conflict"
+        ],
+        "summary": "The great battle for the capital of Gondor during the War of the Ring",
+        "type": "event",
+        "subType": "battle",
+        "description": "A major battle where the forces of Mordor besieged Minas Tirith, culminating in the arrival of the Rohirrim and Aragorn's forces",
+        "date": {
+          "start": "13342-03-13",
+          "end": "13342-03-15"
+        },
+        "consequences": [
+          "Salvation of Minas Tirith",
+          "Death of King Théoden",
+          "Proving of Aragorn's leadership",
+          "Weakening of Sauron's forces"
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "id": "6h7i8j9k-0l1m-2n3o-p4q5-r6s7t8u9v0w1",
+        "fromId": "o5p6q7r8-9012-mnop-q234-56789abcdef0",
+        "fromType": "location",
+        "toId": "p6q7r8s9-0123-nopq-r345-6789abcdef01",
+        "toType": "location",
+        "relationType": "contains"
+      },
+      {
+        "id": "7i8j9k0l-1m2n-3o4p-q5r6-s7t8u9v0w1x2",
+        "fromId": "p6q7r8s9-0123-nopq-r345-6789abcdef01",
+        "fromType": "location",
+        "toId": "o5p6q7r8-9012-mnop-q234-56789abcdef0",
+        "toType": "location",
+        "relationType": "part-of"
+      },
+      {
+        "id": "8j9k0l1m-2n3o-4p5q-r6s7-t8u9v0w1x2y3",
+        "fromId": "d4e5f6g7-8901-bcde-f234-56789abcdef0",
+        "fromType": "item",
+        "toId": "p6q7r8s9-0123-nopq-r345-6789abcdef01",
+        "toType": "location",
+        "relationType": "created"
+      },
+      {
+        "id": "9k0l1m2n-3o4p-5q6r-s7t8-u9v0w1x2y3z4",
+        "fromId": "p6q7r8s9-0123-nopq-r345-6789abcdef01",
+        "fromType": "location",
+        "toId": "d4e5f6g7-8901-bcde-f234-56789abcdef0",
+        "toType": "item",
+        "relationType": "created"
+      },
+      {
+        "id": "s9t0u1v2-3456-qrst-u678-9abcdef01234",
+        "fromId": "h8i9j0k1-2345-fghi-j678-9abcdef01234",
+        "fromType": "timePeriod",
+        "toId": "q7r8s9t0-1234-opqr-s456-789abcdef012",
+        "toType": "timePeriod",
+        "relationType": "follows"
+      },
+      {
+        "id": "t0u1v2w3-4567-rstu-v789-abcdef012345",
+        "fromId": "q7r8s9t0-1234-opqr-s456-789abcdef012",
+        "fromType": "timePeriod",
+        "toId": "h8i9j0k1-2345-fghi-j678-9abcdef01234",
+        "toType": "timePeriod",
+        "relationType": "precedes"
+      },
+      {
+        "id": "u1v2w3x4-5678-stuv-w890-bcdef0123456",
+        "fromId": "r8s9t0u1-2345-pqrs-t567-89abcdef0123",
+        "fromType": "character",
+        "toId": "d4e5f6g7-8901-bcde-f234-56789abcdef0",
+        "toType": "item",
+        "relationType": "creates"
+      },
+      {
+        "id": "v2w3x4y5-6789-tuvw-x901-cdef01234567",
+        "fromId": "d4e5f6g7-8901-bcde-f234-56789abcdef0",
+        "fromType": "item",
+        "toId": "r8s9t0u1-2345-pqrs-t567-89abcdef0123",
+        "toType": "character",
+        "relationType": "created-by"
+      },
+      {
+        "id": "w3x4y5z6-7890-uvwx-y012-def012345678",
+        "fromId": "r8s9t0u1-2345-pqrs-t567-89abcdef0123",
+        "fromType": "character",
+        "toId": "o5p6q7r8-9012-mnop-q234-56789abcdef0",
+        "toType": "location",
+        "relationType": "controls"
+      },
+      {
+        "id": "x4y5z6a7-8901-vwxy-z123-ef0123456789",
+        "fromId": "o5p6q7r8-9012-mnop-q234-56789abcdef0",
+        "fromType": "location",
+        "toId": "r8s9t0u1-2345-pqrs-t567-89abcdef0123",
+        "toType": "character",
+        "relationType": "controlled-by"
+      },
+      {
+        "id": "g5h6i7j8-9012-klmn-o234-567890123ghi",
+        "fromId": "d2e3f4g5-6789-hijk-l901-234567890def",
+        "fromType": "character",
+        "toId": "e3f4g5h6-7890-ijkl-m012-345678901efg",
+        "toType": "location",
+        "relationType": "rules"
+      },
+      {
+        "id": "h6i7j8k9-0123-lmno-p345-678901234hij",
+        "fromId": "e3f4g5h6-7890-ijkl-m012-345678901efg",
+        "fromType": "location",
+        "toId": "d2e3f4g5-6789-hijk-l901-234567890def",
+        "toType": "character",
+        "relationType": "ruled-by"
+      },
+      {
+        "id": "i7j8k9l0-1234-mnop-q456-789012345ijk",
+        "fromId": "d2e3f4g5-6789-hijk-l901-234567890def",
+        "fromType": "character",
+        "toId": "f4g5h6i7-8901-jklm-n123-456789012fgh",
+        "toType": "item",
+        "relationType": "possesses"
+      },
+      {
+        "id": "j8k9l0m1-2345-nopq-r567-890123456jkl",
+        "fromId": "f4g5h6i7-8901-jklm-n123-456789012fgh",
+        "fromType": "item",
+        "toId": "d2e3f4g5-6789-hijk-l901-234567890def",
+        "toType": "character",
+        "relationType": "possessed-by"
+      },
+      {
+        "id": "p4q5r6s7-8901-tuvw-x123-456789012pqr",
+        "fromId": "k9l0m1n2-3456-opqr-s678-901234567klm",
+        "fromType": "character",
+        "toId": "l0m1n2o3-4567-pqrs-t789-012345678lmn",
+        "toType": "item",
+        "relationType": "possesses"
+      },
+      {
+        "id": "q5r6s7t8-9012-uvwx-y234-567890123qrs",
+        "fromId": "l0m1n2o3-4567-pqrs-t789-012345678lmn",
+        "fromType": "item",
+        "toId": "k9l0m1n2-3456-opqr-s678-901234567klm",
+        "toType": "character",
+        "relationType": "possessed-by"
+      },
+      {
+        "id": "r6s7t8u9-0123-vwxy-z345-678901234rst",
+        "fromId": "n2o3p4q5-6789-rstu-v901-234567890nop",
+        "fromType": "character",
+        "toId": "m1n2o3p4-5678-qrst-u890-123456789mno",
+        "toType": "location",
+        "relationType": "controls"
+      },
+      {
+        "id": "s7t8u9v0-1234-wxyz-a456-789012345stu",
+        "fromId": "m1n2o3p4-5678-qrst-u890-123456789mno",
+        "fromType": "location",
+        "toId": "n2o3p4q5-6789-rstu-v901-234567890nop",
+        "toType": "character",
+        "relationType": "controlled-by"
+      },
+      {
+        "id": "t8u9v0w1-2345-xyza-b567-890123456tuv",
+        "fromId": "n2o3p4q5-6789-rstu-v901-234567890nop",
+        "fromType": "character",
+        "toId": "o3p4q5r6-7890-stuv-w012-345678901opq",
+        "toType": "event",
+        "relationType": "participates-in"
+      },
+      {
+        "id": "u9v0w1x2-3456-yzab-c678-901234567uvw",
+        "fromId": "o3p4q5r6-7890-stuv-w012-345678901opq",
+        "fromType": "event",
+        "toId": "n2o3p4q5-6789-rstu-v901-234567890nop",
+        "toType": "character",
+        "relationType": "involves"
+      },
+      {
+        "id": "f201f274-a175-418b-b5ad-e8c42f41173a",
+        "fromId": "k9l0m1n2-3456-opqr-s678-901234567klm",
+        "fromType": "character",
+        "toId": "d2e3f4g5-6789-hijk-l901-234567890def",
+        "toType": "character",
+        "relationType": "ally"
+      },
+      {
+        "id": "62074b98-26d8-44fe-b620-7cb4ab60de07",
+        "fromId": "d2e3f4g5-6789-hijk-l901-234567890def",
+        "fromType": "character",
+        "toId": "k9l0m1n2-3456-opqr-s678-901234567klm",
+        "toType": "character",
+        "relationType": "ally"
+      },
+      {
+        "id": "45e9b2c8-5c86-4a22-ac17-9ed09e69cdb4",
+        "fromId": "i9j0k1l2-3456-ghij-k789-abcdef012345",
+        "fromType": "character",
+        "toId": "r8s9t0u1-2345-pqrs-t567-89abcdef0123",
+        "toType": "character",
+        "relationType": "enemy"
+      },
+      {
+        "id": "27f300a1-6c64-4131-8fc9-0279bbffa4d2",
+        "fromId": "r8s9t0u1-2345-pqrs-t567-89abcdef0123",
+        "fromType": "character",
+        "toId": "i9j0k1l2-3456-ghij-k789-abcdef012345",
+        "toType": "character",
+        "relationType": "enemy"
+      },
+      {
+        "id": "ca73c044-96ac-48ab-bc70-fe5bd9e87ffe",
+        "fromId": "k9l0m1n2-3456-opqr-s678-901234567klm",
+        "fromType": "character",
+        "toId": "i9j0k1l2-3456-ghij-k789-abcdef012345",
+        "toType": "character",
+        "relationType": "ally"
+      },
+      {
+        "id": "1f1bb450-c673-4c7c-a072-09a10b3fd32f",
+        "fromId": "i9j0k1l2-3456-ghij-k789-abcdef012345",
+        "fromType": "character",
+        "toId": "k9l0m1n2-3456-opqr-s678-901234567klm",
+        "toType": "character",
+        "relationType": "ally"
+      },
+      {
+        "id": "45d100e3-a3e8-4959-974d-d972760dd2a9",
+        "fromId": "n2o3p4q5-6789-rstu-v901-234567890nop",
+        "fromType": "character",
+        "toId": "r8s9t0u1-2345-pqrs-t567-89abcdef0123",
+        "toType": "character",
+        "relationType": "ally"
+      },
+      {
+        "id": "8eef9f92-eeaf-4dbd-be44-49650e9aa2c0",
+        "fromId": "r8s9t0u1-2345-pqrs-t567-89abcdef0123",
+        "fromType": "character",
+        "toId": "n2o3p4q5-6789-rstu-v901-234567890nop",
+        "toType": "character",
+        "relationType": "ally"
+      }
+    ],
+    "selectedEntityId": null,
+    "searchQuery": "",
+    "filters": {
+      "types": [],
+      "tags": []
+    },
+    "lastCreatedEntityId": null,
+    "networkFilters": {
+      "types": [
+        "character",
+        "location"
+      ],
+      "subTypes": {
+        "character": [
+          "protagonist",
+          "antagonist",
+          "supporting",
+          "background"
+        ],
+        "location": [
+          "continent",
+          "region",
+          "city",
+          "building",
+          "landmark"
+        ],
+        "event": [],
+        "item": [],
+        "faction": [],
+        "timePeriod": []
+      },
+      "relationPairs": [
+        "character-character"
+      ],
+      "expandedTypes": {}
+    }
+  },
+  "map": {
+    "markers": [
+      {
+        "id": "b2c3d4e5-6789-0abc-def1-23456789abcd",
+        "x": 58.276527870228776,
+        "y": 28.723504567925843,
+        "locationId": "b2c3d4e5-6789-0abc-def1-23456789abcd"
+      }
+    ]
+  },
+  "version": 1,
+  "exportDate": "2024-11-04T08:07:48.533Z"
+}

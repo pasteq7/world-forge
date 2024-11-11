@@ -35,8 +35,6 @@ export const TimelineList = ({
               item={item}
               isActive={index === activeIndex}
               onClick={() => onItemClick(item.id, index)}
-              index={index}
-              position={index % 2 === 0 ? 'left' : 'right'}
             />
           </div>
         ))}

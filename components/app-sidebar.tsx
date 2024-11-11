@@ -49,7 +49,7 @@ export function AppSidebar() {
         <SidebarContent className="p-4">
           {/* Brand/Logo Section */}
           <div className="flex items-center gap-2 px-2 mb-6">
-            <span className="font-semibold text-lg">WorldBuilder</span>
+            <span className="font-semibold text-lg">World-Forge</span>
           </div>
 
           <SidebarGroup>

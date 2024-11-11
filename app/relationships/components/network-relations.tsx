@@ -18,7 +18,7 @@ import ForceGraph3D from 'react-force-graph-3d';
 import { ForceGraphMethods as ForceGraph2DMethods } from 'react-force-graph-2d';
 import { ForceGraphMethods as ForceGraph3DMethods } from 'react-force-graph-3d';
 
-const FONT_SIZE = 8;
+const FONT_SIZE = 4;
 
 // Define the specific node and link types for better type inference
 type GraphNode = NodeObject<Partial<NetworkNode>>;
@@ -156,11 +156,11 @@ export function RelationsNetwork() {
       const centerForce = d3.force('center');
       const collisionForce = d3.force('collision');
 
-      if (linkForce?.strength) linkForce.strength(0.2);
-      if (chargeForce?.strength) chargeForce.strength(-50);
-      if (centerForce?.strength) centerForce.strength(0.05);
+      if (linkForce?.strength) linkForce.strength(0.3);
+      if (chargeForce?.strength) chargeForce.strength(-120);
+      if (centerForce?.strength) centerForce.strength(0.1);
       if (collisionForce?.radius) {
-        collisionForce.radius((node: { val: number }) => node.val * 1.5);
+        collisionForce.radius((node: { val: number }) => node.val * 2);
       }
     },
     linkOpacity: 0.6,
@@ -217,20 +217,6 @@ export function RelationsNetwork() {
       }
     }
   }, []);
-
-  const handleNodeDrag = useCallback((node: ForceGraphNodeObject) => {
-    if (!node) return;
-    
-    // Temporarily increase alpha to maintain some movement
-    const fg = activeRef.current;
-    if (fg) {
-      const d3Force = (fg as any).d3Force();
-      if (d3Force) {
-        d3Force.alpha(0.1);
-        d3Force.alphaTarget(0);
-      }
-    }
-  }, [activeRef]);
 
   return (
     <div 
@@ -295,8 +281,6 @@ export function RelationsNetwork() {
               backgroundColor="#ffffff00"
               enablePointerInteraction={true}
               onNodeDragEnd={handleNodeDragEnd}
-              onNodeDrag={handleNodeDrag}
-              warmupTicks={100}
             />
           )
         )}

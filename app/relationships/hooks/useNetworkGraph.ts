@@ -20,7 +20,7 @@ export function useNetworkGraph() {
       name: entity.name,
       type: entity.type,
       subType: entity.subType,
-      val: 5,
+      val: 2,
       color: subTypeColors[entity.type][entity.subType] || entityTypeColors[entity.type]
     }));
 

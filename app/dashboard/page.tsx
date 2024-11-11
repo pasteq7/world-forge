@@ -12,7 +12,7 @@ export default function DashboardPage() {
       </header>
       
       <div className="flex-1 overflow-auto">
-        <div className="container mx-auto p-4">
+        <div className="p-4">
           <div className="grid grid-cols-12 gap-6">
             {/* Main Content  */}
             <div className="col-span-12 lg:col-span-9">

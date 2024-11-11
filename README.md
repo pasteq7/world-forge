@@ -2,7 +2,7 @@
 
 WorldForge is a web application for writers, game masters, and worldbuilders to create, organize, and visualize their fictional universes. Built with Next.js 14 and TypeScript, it offers an interface for managing worlds and their interconnected elements.
 
-Demo: https://worldforge.vercel.app/
+Demo: https://world-forge.vercel.app/
 
 ## Features
 

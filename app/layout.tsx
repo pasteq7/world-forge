@@ -6,6 +6,14 @@ import { Toaster } from "@/components/ui/sonner"
 import { cn } from "@/lib/utils"
 import { SidebarProvider } from "@/components/ui/sidebar"
 
+export const metadata = {
+  title: 'World-Forge',
+  description: 'A web application for writers, game masters, and worldbuilders to create, organize, and visualize their fictional universes.',
+  icons: {
+    icon: '/favicon.ico',
+  },
+}
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({

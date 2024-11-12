@@ -251,39 +251,30 @@ export function EntitySheet({ entityId, open, onOpenChange }: EntitySheetProps) 
         </Tabs>
 
         <SheetFooter className="shrink-0 p-6 pt-4 border-t">
-          <div className="w-full flex justify-between items-center">
-            <AlertDialog open={deleteDialogOpen} onOpenChange={setDeleteDialogOpen}>
-              <AlertDialogTrigger asChild>
-                <Button
-                  variant="destructive"
-                  size="sm"
-                >
-                  <Trash2 className="h-4 w-4 mr-2" />
-                  Delete {entity.type}
-                </Button>
-              </AlertDialogTrigger>
-              <AlertDialogContent>
-                <AlertDialogHeader>
-                  <AlertDialogTitle>Are you sure?</AlertDialogTitle>
-                  <AlertDialogDescription>
-                    This action cannot be undone. This will permanently delete {entity.name || `this ${entity.type}`}
-                    and remove all associated relationships.
-                  </AlertDialogDescription>
-                </AlertDialogHeader>
-                <AlertDialogFooter>
-                  <AlertDialogCancel>Cancel</AlertDialogCancel>
-                  <AlertDialogAction onClick={handleDelete}>Delete</AlertDialogAction>
-                </AlertDialogFooter>
-              </AlertDialogContent>
-            </AlertDialog>
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => onOpenChange(false)}
-            >
-              Close
-            </Button>
-          </div>
+          <AlertDialog open={deleteDialogOpen} onOpenChange={setDeleteDialogOpen}>
+            <AlertDialogTrigger asChild>
+              <Button
+                variant="destructive"
+                size="sm"
+              >
+                <Trash2 className="h-4 w-4 mr-2" />
+                Delete {entity.type}
+              </Button>
+            </AlertDialogTrigger>
+            <AlertDialogContent>
+              <AlertDialogHeader>
+                <AlertDialogTitle>Are you sure?</AlertDialogTitle>
+                <AlertDialogDescription>
+                  This action cannot be undone. This will permanently delete {entity.name || `this ${entity.type}`}
+                  and remove all associated relationships.
+                </AlertDialogDescription>
+              </AlertDialogHeader>
+              <AlertDialogFooter>
+                <AlertDialogCancel>Cancel</AlertDialogCancel>
+                <AlertDialogAction onClick={handleDelete}>Delete</AlertDialogAction>
+              </AlertDialogFooter>
+            </AlertDialogContent>
+          </AlertDialog>
         </SheetFooter>
       </SheetContent>
     </Sheet>

@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 import { useWorldStore } from "@/store/world-store"
 import { Clock } from "lucide-react"
-import { EntityDialog } from "@/components/common/entity-dialog"
+import { EntitySheet } from "@/components/common/entity-sheet"
 import { UUID } from "@/types/core"
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 import { formatEntityType } from "@/lib/utils"
@@ -69,7 +69,7 @@ export function RecentEntities() {
                 <PopoverContent className="w-[800px] p-0">
                   {
                     selectedEntity === entity.id && (
-                      <EntityDialog
+                      <EntitySheet
                         entityId={entity.id}
                         open={!!selectedEntity}
                         onOpenChange={(open) => !open && setSelectedEntity(null)}

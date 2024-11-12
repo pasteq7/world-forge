@@ -3,7 +3,7 @@
 import { createNode3DObject } from './node-3d-object';
 import { NetworkFilters } from './network-filters';
 import { useCallback, useRef, useEffect, useState, useMemo } from 'react';
-import { EntityDialog } from '@/components/common/entity-dialog';
+import { EntitySheet } from '@/components/common/entity-sheet';
 import { useNetworkGraph } from '@/app/relationships/hooks/useNetworkGraph';
 import { useNetworkInteractions } from '@/app/relationships/hooks/useNetworkInteractions';
 import { 
@@ -287,7 +287,7 @@ export function RelationsNetwork() {
       </div>
       
       {selectedEntityId && (
-        <EntityDialog
+        <EntitySheet
           entityId={selectedEntityId as `${string}-${string}-${string}-${string}-${string}`}
           open={dialogOpen}
           onOpenChange={setDialogOpen}

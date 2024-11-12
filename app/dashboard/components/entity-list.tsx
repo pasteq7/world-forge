@@ -6,7 +6,7 @@ import { SortOption, UUID, EntityType } from '@/types/core'
 import { Card } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
-import { EntityDialog } from '@/components/common/entity-dialog'
+import { EntitySheet } from '@/components/common/entity-sheet'
 import { Badge } from '@/components/ui/badge'
 import { cn, formatSingularEntityType } from "@/lib/utils"
 import { Skeleton } from "@/components/ui/skeleton"
@@ -215,7 +215,7 @@ export function EntityList() {
       </div>
 
       {selectedEntityId && (
-        <EntityDialog
+        <EntitySheet
           entityId={selectedEntityId}
           open={dialogOpen}
           onOpenChange={setDialogOpen}

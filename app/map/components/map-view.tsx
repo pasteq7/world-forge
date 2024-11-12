@@ -8,7 +8,7 @@ import { MapControls } from './map-controls'
 import { MapSearch } from './map-search'
 import { MapMarker } from './map-marker'
 import { MapUpload } from './map-upload'
-import { EntityDialog } from '@/components/common/entity-dialog'
+import { EntitySheet } from '@/components/common/entity-sheet'
 import { cn } from "@/lib/utils"
 import { useMapView } from '../hooks/useMapView'
 import { useMapMarkers } from '../hooks/useMapMarkers'
@@ -152,7 +152,7 @@ export function MapView() {
         </div>
       )}
 
-      <EntityDialog 
+      <EntitySheet 
         entityId={editingEntityId!}
         open={!!editingEntityId}
         onOpenChange={(open) => {

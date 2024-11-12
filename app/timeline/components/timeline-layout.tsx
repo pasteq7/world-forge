@@ -4,7 +4,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { TimelineList } from './timeline-list';
 import { TimelineSearch } from './timeline-search';
 import { TimelineControls } from './timeline-controls';
-import { EntityDialog } from '@/components/common/entity-dialog';
+import { EntitySheet } from '@/components/common/entity-sheet';
 import { useTimelineNavigation } from '@/app/timeline/hooks/useTimelineNavigation';
 import { useTimelineWheel } from '@/app/timeline/hooks/useTimelineWheel';
 import { TimelineItemType } from '@/types/timeline';
@@ -184,7 +184,7 @@ export const EventTimeline = () => {
         />
 
         {selectedId && (
-          <EntityDialog
+          <EntitySheet
             entityId={selectedId}
             open={dialogOpen}
             onOpenChange={setDialogOpen}

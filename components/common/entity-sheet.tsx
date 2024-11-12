@@ -1,4 +1,4 @@
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from "@/components/ui/dialog"
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetFooter } from "@/components/ui/sheet"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button"
 import { Trash2 } from "lucide-react"
@@ -23,7 +23,7 @@ import { Textarea } from "@/components/ui/textarea"
 import RelationshipsContent from './relationships-tab'
 import { CharacterFields, LocationFields, EventFields, ItemFields, FactionFields, TimePeriodFields } from './entity-fields'
 
-interface EntityDialogProps {
+interface EntitySheetProps {
   entityId: UUID
   open: boolean
   onOpenChange: (open: boolean) => void
@@ -83,8 +83,9 @@ function TagInput({ value, onChange }: {
 
 type EntityUpdates<T extends WorldEntity> = Partial<Omit<T, 'type' | 'id'>>;
 
-export function EntityDialog({ entityId, open, onOpenChange }: EntityDialogProps) {
+export function EntitySheet({ entityId, open, onOpenChange }: EntitySheetProps) {
   const [activeTab, setActiveTab] = useState('details')
+  const [deleteDialogOpen, setDeleteDialogOpen] = useState(false)
 
   const entity = useWorldStore(
     useCallback(state => state.getEntity(entityId), [entityId])
@@ -155,13 +156,13 @@ export function EntityDialog({ entityId, open, onOpenChange }: EntityDialogProps
   if (!entity) return null;
 
   return (
-    <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="w-[1280px] h-[800px] max-h-[90vh] flex flex-col gap-0 p-0">
-        <DialogHeader className="shrink-0 p-6 pb-2">
-          <DialogTitle className="text-xl">
+    <Sheet open={open} onOpenChange={onOpenChange}>
+      <SheetContent className="w-[1280px] h-full flex flex-col gap-0 p-0">
+        <SheetHeader className="shrink-0 p-6 pb-2">
+          <SheetTitle className="text-xl">
             {entity.name || `New ${entity.type.charAt(0).toUpperCase() + entity.type.slice(1)}`}
-          </DialogTitle>
-        </DialogHeader>
+          </SheetTitle>
+        </SheetHeader>
 
         <Tabs 
           value={activeTab} 
@@ -249,9 +250,9 @@ export function EntityDialog({ entityId, open, onOpenChange }: EntityDialogProps
           </div>
         </Tabs>
 
-        <DialogFooter className="shrink-0 p-6 pt-4 border-t">
+        <SheetFooter className="shrink-0 p-6 pt-4 border-t">
           <div className="w-full flex justify-between items-center">
-            <AlertDialog>
+            <AlertDialog open={deleteDialogOpen} onOpenChange={setDeleteDialogOpen}>
               <AlertDialogTrigger asChild>
                 <Button
                   variant="destructive"
@@ -265,17 +266,13 @@ export function EntityDialog({ entityId, open, onOpenChange }: EntityDialogProps
                 <AlertDialogHeader>
                   <AlertDialogTitle>Are you sure?</AlertDialogTitle>
                   <AlertDialogDescription>
-                    This will permanently delete {entity.name}. This action cannot be undone.
+                    This action cannot be undone. This will permanently delete {entity.name || `this ${entity.type}`}
+                    and remove all associated relationships.
                   </AlertDialogDescription>
                 </AlertDialogHeader>
                 <AlertDialogFooter>
                   <AlertDialogCancel>Cancel</AlertDialogCancel>
-                  <AlertDialogAction
-                    className="bg-destructive hover:bg-destructive/90 text-primary"
-                    onClick={handleDelete}
-                  >
-                    Delete
-                  </AlertDialogAction>
+                  <AlertDialogAction onClick={handleDelete}>Delete</AlertDialogAction>
                 </AlertDialogFooter>
               </AlertDialogContent>
             </AlertDialog>
@@ -287,8 +284,8 @@ export function EntityDialog({ entityId, open, onOpenChange }: EntityDialogProps
               Close
             </Button>
           </div>
-        </DialogFooter>
-      </DialogContent>
-    </Dialog>
+        </SheetFooter>
+      </SheetContent>
+    </Sheet>
   )
 }

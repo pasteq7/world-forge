@@ -243,12 +243,6 @@ export function RelationsNetwork() {
               onNodeClick={handleNodeClick}
               enableNodeDrag={isStabilized}
               cooldownTicks={100}
-              onEngineStop={() => {
-                if (activeRef.current && !isStabilized) {
-                  activeRef.current.zoomToFit(400, 50);
-                  setIsStabilized(true);
-                }
-              }}
               onNodeHover={handleNodeHover}
               linkCurvature={0}
               cooldownTime={2000}
@@ -266,15 +260,9 @@ export function RelationsNetwork() {
               nodeCanvasObject={nodeCanvasObject}
               onNodeClick={handleNodeClick}
               enableNodeDrag={isStabilized}
-              minZoom={0.5}
-              maxZoom={4}
+              minZoom={1}
+              maxZoom={10}
               cooldownTicks={100}
-              onEngineStop={() => {
-                if (activeRef.current && !isStabilized) {
-                  activeRef.current.zoomToFit(400, 50);
-                  setIsStabilized(true);
-                }
-              }}
               onNodeHover={handleNodeHover}
               linkCurvature={0}
               cooldownTime={2000}

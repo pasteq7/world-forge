@@ -28,7 +28,6 @@ export function RelationsNetwork() {
   const [is3D, setIs3D] = useState(false);
   const [selectedEntityId, setSelectedEntityId] = useState<string | null>(null);
   const [dialogOpen, setDialogOpen] = useState(false);
-  const [isStabilized, setIsStabilized] = useState(false);
   const [dimensions, setDimensions] = useState<{ width: number; height: number } | null>(null);
   
   const containerRef = useRef<HTMLDivElement>(null);
@@ -241,7 +240,6 @@ export function RelationsNetwork() {
               {...graphConfig}
               nodeThreeObject={(node: GraphNode) => node3DObject(node as NetworkNode)}
               onNodeClick={handleNodeClick}
-              enableNodeDrag={isStabilized}
               cooldownTicks={100}
               onNodeHover={handleNodeHover}
               linkCurvature={0}
@@ -259,7 +257,6 @@ export function RelationsNetwork() {
               {...graphConfig}
               nodeCanvasObject={nodeCanvasObject}
               onNodeClick={handleNodeClick}
-              enableNodeDrag={isStabilized}
               minZoom={1}
               maxZoom={10}
               cooldownTicks={100}

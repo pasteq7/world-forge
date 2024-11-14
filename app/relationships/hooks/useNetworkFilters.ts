@@ -12,17 +12,14 @@ export function useNetworkFilters() {
       ? [...networkFilters.types, type]
       : networkFilters.types.filter((t: EntityType) => t !== type);
 
-    // Get all possible relation pairs for the new type
     const newRelationPairs = new Set(networkFilters.relationPairs);
     
     if (isTypeEnabled) {
-      // Add self-relationship if it exists
       if (RelationTypes[type]?.[type]) {
         const selfPairKey = [type, type].sort().join('-');
         newRelationPairs.add(selfPairKey);
       }
 
-      // Add relationships with existing types
       networkFilters.types.forEach((existingType) => {
         const pairKey = [type, existingType].sort().join('-');
         if (RelationTypes[type]?.[existingType] || RelationTypes[existingType]?.[type]) {
@@ -30,7 +27,6 @@ export function useNetworkFilters() {
         }
       });
     } else {
-      // When disabling a type, remove all relation pairs containing this type
       networkFilters.relationPairs = networkFilters.relationPairs.filter(pair => {
         const [type1, type2] = pair.split('-');
         return type1 !== type && type2 !== type;

@@ -36,10 +36,8 @@ export function useMapView() {
   const handleCenterLocation = useCallback((markers: MapMarker[], locationId: UUID) => {
     const marker = markers.find(m => m.locationId === locationId)
     if (marker && transformRef.current) {
-      // Reset to default position first
       transformRef.current.resetTransform()
       
-      // Then apply centering with a slight delay
       setTimeout(() => {
         const centerX = -(marker.x - 50) * 5
         const centerY = -(marker.y - 50) * 5

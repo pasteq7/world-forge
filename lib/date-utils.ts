@@ -113,13 +113,13 @@ export function formatYearRange(start?: string, end?: string): string {
   const endDate = end ? parseHistoricalDate(end) : null;
   
   const formatYear = (year: number) => {
-    return year < 0 ? `${Math.abs(year)} ` : `${year} `; // Added CE suffix for consistency
+    return year < 0 ? `${Math.abs(year)} ` : `${year} `;
   };
   
   const formattedStart = formatYear(startDate.year);
   const formattedEnd = endDate ? formatYear(endDate.year) : '';
     
-  // If we have both dates and they're the same year, just return one year
+  // If have both dates and they're the same year, just return one year
   if (endDate && startDate.year === endDate.year) {
     return formattedStart;
   }

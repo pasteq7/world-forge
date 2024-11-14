@@ -15,13 +15,11 @@ function getEntityTypeLabel(type: EntityType): string {
 }
 
 export default function RelationshipsContent({ entity }: RelationshipsContentProps) {
-  // Use separate selectors for better performance
   const entities = useWorldStore(state => state.entities);
   const relations = useWorldStore(state => state.relations);
   const addEntityRelation = useWorldStore(state => state.addEntityRelation);
   const removeRelation = useWorldStore(state => state.deleteEntityRelation);
 
-  // Memoize filtered data
   const filteredEntities = useMemo(() => 
     entities.filter(e => e.id !== entity.id),
     [entities, entity.id]
@@ -32,14 +30,12 @@ export default function RelationshipsContent({ entity }: RelationshipsContentPro
     [relations, entity.id]
   );
 
-  // Local state with proper UUID type
   const [targetId, setTargetId] = useState<UUID>('' as UUID);
   const [relationType, setRelationType] = useState('');
   const [customRelationType, setCustomRelationType] = useState('');
   const [customInverseType, setCustomInverseType] = useState('');
   const [activeTab, setActiveTab] = useState<EntityType>(EntityType.Character);
 
-  // Get valid relation types based on selected target
   const getValidRelationTypes = useMemo(() => {
     if (!targetId) return [];
     const target = entities.find(e => e.id === targetId);
@@ -53,10 +49,8 @@ export default function RelationshipsContent({ entity }: RelationshipsContentPro
     const target = entities.find(e => e.id === targetId);
     if (!target) return;
 
-    // For custom relations, use the same type if no inverse specified
     const inverseType = customInverseType || customRelationType;
 
-    // Add the primary relation
     addEntityRelation(
       entity.id,
       entity.type,
@@ -69,7 +63,6 @@ export default function RelationshipsContent({ entity }: RelationshipsContentPro
       } : undefined
     );
 
-    // For custom relations, always add the inverse
     if (relationType === 'custom') {
       addEntityRelation(
         targetId,
@@ -83,7 +76,6 @@ export default function RelationshipsContent({ entity }: RelationshipsContentPro
       );
     }
 
-    // Reset form
     setTargetId('' as UUID);
     setRelationType('');
     setCustomRelationType('');
@@ -91,11 +83,9 @@ export default function RelationshipsContent({ entity }: RelationshipsContentPro
   };
 
   const handleRemove = (fromId: UUID, toId: UUID) => {
-    // Find the specific relation to remove
     const relation = relations.find(r => r.fromId === fromId && r.toId === toId);
     if (!relation) return;
 
-    // Remove only this specific relation
     removeRelation(relation.id);
   };
 

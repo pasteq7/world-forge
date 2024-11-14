@@ -42,7 +42,6 @@ function FilterSection({ title, children }: { title: string, children: React.Rea
   );
 }
 
-// Helper function to get entity type pairs
 const getEntityTypePairs = (types: EntityType[]): Array<[EntityType, EntityType]> => {
   const pairs = new Set<string>();
   

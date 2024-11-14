@@ -395,7 +395,7 @@ export const validateRelation = (
 ): boolean => {
   // Always allow custom relations
   if (!RelationTypes[fromType]?.[toType]?.includes(relationType as any)) {
-    return true; // Consider all non-predefined relations as valid custom relations
+    return true; 
   }
   
   // Check predefined relations
@@ -416,7 +416,6 @@ export const getAvailableRelations = (
     rel => getInverseRelationType(rel)
   ).filter((rel): rel is string => rel !== null) || [];
   
-  // Add a note about custom relations being allowed
   return [...directRelations, ...inverseRelations, 'custom'];
 };
 

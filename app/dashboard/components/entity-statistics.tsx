@@ -9,7 +9,6 @@ import { formatEntityType } from "@/lib/utils"
 export function EntityStatistics() {
   const entities = useWorldStore((state) => state.entities)
   
-  // Dynamically generate stats based on SubTypes
   const stats = {
     characters: Object.entries(SubTypes.character).reduce((acc, [key, value]) => ({
       ...acc,
@@ -53,7 +52,6 @@ export function EntityStatistics() {
       ).length
     }), {}),
 
-    // Keep the tags calculation
     totalTags: [...new Set(entities.flatMap(e => e.tags))].length,
   }
 

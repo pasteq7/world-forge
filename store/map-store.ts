@@ -131,7 +131,6 @@ export const useMapStore = create<MapState>()(
   )
 )
 
-// Helper function to get store state safely
 export const getMapState = () => {
   const state = useMapStore.getState();
   return {

@@ -23,10 +23,8 @@ export const useTimelineWheel = ({
         onWheelStart?.();
         navigateTimeline(e.deltaY > 0 ? 'down' : 'up');
         
-        // Clear any existing timeout
         clearTimeout(wheelTimeout);
         
-        // Set a new timeout to indicate wheel navigation has ended
         wheelTimeout = setTimeout(() => {
           onWheelEnd?.();
         }, 150);

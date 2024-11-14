@@ -66,7 +66,7 @@ interface WorldState {
   exportWorld: () => Promise<Blob>;
   importWorld: (jsonData: string) => void;
   
-  // Add these new methods
+  // Network
   getCharacterNetwork: () => {
     nodes: Character[];
     links: EntityRelation[];
@@ -88,7 +88,7 @@ interface WorldState {
   setNetworkFilters: (filters: NetworkFiltersState) => void;
 }
 
-// Add this type definition
+// Export
 type WorldExportData = {
   entities: WorldEntity[];
   relations: EntityRelation[];
@@ -171,7 +171,6 @@ export const useWorldStore = create<WorldState>()(
           metadata
         };
 
-        // Use the addRelation method to handle both primary and inverse relations
         get().addRelation(newRelation);
       },
       
@@ -212,8 +211,6 @@ export const useWorldStore = create<WorldState>()(
               )
             };
           }
-
-          // No inverse relation, just remove the single relation
           return {
             relations: state.relations.filter(r => r.id !== relationId)
           };
@@ -229,7 +226,6 @@ export const useWorldStore = create<WorldState>()(
         toType: To,
         relationType: ValidRelationType<From, To> | string
       ) => {
-        // Always allow custom relations
         if (relationType === 'custom') return true;
         
         return validateRelation(fromType, toType, relationType);

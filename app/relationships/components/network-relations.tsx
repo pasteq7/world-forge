@@ -20,7 +20,6 @@ import { ForceGraphMethods as ForceGraph3DMethods } from 'react-force-graph-3d';
 
 const FONT_SIZE = 4;
 
-// Define the specific node and link types for better type inference
 type GraphNode = NodeObject<Partial<NetworkNode>>;
 type GraphLink = LinkObject<Partial<NetworkNode>, NetworkLink>;
 
@@ -65,7 +64,6 @@ export function RelationsNetwork() {
       const width = containerRef.current.clientWidth;
       const height = containerRef.current.clientHeight;
       
-      // Only update if dimensions actually changed or are null
       setDimensions(prev => {
         if (!prev || prev.width !== width || prev.height !== height) {
           return { width, height };
@@ -74,13 +72,10 @@ export function RelationsNetwork() {
       });
     };
 
-    // Run immediately
     updateDimensions();
     
-    // Add resize listener
     window.addEventListener('resize', updateDimensions);
     
-    // Run after a short delay to ensure container is properly laid out
     const timeout = setTimeout(updateDimensions, 300);
 
     return () => {
@@ -171,7 +166,6 @@ export function RelationsNetwork() {
     return createNode3DObject(node);
   }, []);
 
-  // Type guard to handle the different methods between 2D and 3D
   const activeRef = useMemo(() => {
     return is3D ? fg3DRef : fg2DRef;
   }, [is3D]);
@@ -202,7 +196,6 @@ export function RelationsNetwork() {
     };
   }, [activeRef]);
 
-  // Create a wrapper function with the correct type
   const handleNodeHover = useCallback((node: ForceGraphNodeObject | null) => {
     rawHandleNodeHover(node as NetworkNode | null);
   }, [rawHandleNodeHover]);
